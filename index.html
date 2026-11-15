@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Review Desk · Review Desk</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="demo.js" defer></script>
+  <script src="assets/demo-media.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="export.js" defer></script>
+  <script src="workflow.js" defer></script>
+  <script src="interaction.js" defer></script>
+</head>
+<body>
+  <header><div class="brand"><i aria-hidden="true">✓</i><strong>Review Desk</strong></div>
+    <nav aria-label="Review actions"><select id="projects" aria-label="Switch review"></select><button id="new-project">New review</button></nav>
+  </header>
+  <main id="app" aria-busy="true">Opening local review…</main>
+  <dialog id="dialog"><form id="form"><div class="modal-head"><h2 id="dialog-title"></h2><button type="button" class="icon" id="close" aria-label="Close">×</button></div><div id="fields"></div><div class="modal-actions"><button type="button" id="cancel">Cancel</button><button class="primary" id="submit">Save</button></div></form></dialog>
+  <div id="toast" role="status"></div>
+</body>
+</html>
