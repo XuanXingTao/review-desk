@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>交付验收台 · Review Desk</title>
+  <link rel="stylesheet" href="app.css">
+  <script src="demo.js" defer></script>
+  <script src="assets/demo-media.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="export.js" defer></script>
+  <script src="workflow.js" defer></script>
+  <script src="interaction.js" defer></script>
+</head>
+<body>
+  <header><div class="brand"><i aria-hidden="true">✓</i><strong>交付验收台</strong><span>Review Desk</span></div>
+    <nav aria-label="验收单操作"><select id="projects" aria-label="切换验收单"></select><button id="new-project">新建验收单</button></nav>
+  </header>
+  <main id="app" aria-busy="true">正在打开本地验收单…</main>
+  <dialog id="dialog"><form id="form"><div class="modal-head"><h2 id="dialog-title"></h2><button type="button" class="icon" id="close" aria-label="关闭">×</button></div><div id="fields"></div><div class="modal-actions"><button type="button" id="cancel">取消</button><button class="primary" id="submit">保存</button></div></form></dialog>
+  <div id="toast" role="status"></div>
+</body>
+</html>
